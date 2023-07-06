@@ -15,6 +15,8 @@ html main {
     width: 1440px;
     height: 900px;
     display: flex;
+
+
 }
 
 .hero-text {
@@ -29,6 +31,7 @@ html main {
     background: #F3EEE8;
     width: 720px;
     height: 900px;
+
 }
 
 
@@ -38,12 +41,13 @@ html main {
     flex-shrink: 0;
 }
 
-.hero-header .hero-text header {
+.hero-header header {
     display: flex;
     width: 1140px;
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+
 
 }
 
@@ -169,4 +173,219 @@ html main {
     gap: 10px;
     border-radius: 100px;
     border: 2px solid #A06056;
+}
+
+.side-to-design {
+    display: flex;
+    width: 1440px;
+    padding: 64px 150px 70px 150px;
+    align-items: flex-start;
+    gap: 48px;
+    background: #F3EEE8;
+
+}
+
+.title-link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex: 1 0 0;
+
+}
+
+.title-link .we-helps-creators-do h2 {
+    display: flex;
+    width: 458px;
+    height: 188px;
+    flex-direction: column;
+    color: #706458;
+    font-size: 55px;
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 60px;
+    letter-spacing: -0.6px;
+}
+
+.action-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-link a {
+    color: #A06056;
+    font-size: 17px;
+    font-family: karla;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+}
+
+.services {
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex: 1 0 0;
+
+}
+
+.services .line-01 {
+    display: flex;
+    align-items: flex-start;
+    gap: 29px;
+    align-self: stretch;
+
+}
+
+.services .line-02 {
+    display: flex;
+    align-items: flex-start;
+    gap: 29px;
+    align-self: stretch;
+}
+
+
+.services .line-01 .our-advices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+}
+
+.services .line-01 .our-advices h3 {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    color: #A06056;
+    font-family: Varta;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+}
+
+.services .line-01 .our-advices p {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    color: rgba(112, 100, 88, 0.90);
+    font-family: Varta;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.services .line-01 .click-and-collect {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+}
+
+.services .line-01 .click-and-collect h3 {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    color: #A06056;
+    font-family: Varta;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+}
+
+.services .line-01 .click-and-collect p {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    color: rgba(112, 100, 88, 0.90);
+    font-family: Varta;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.services .line-02 {
+    display: flex;
+    align-items: flex-start;
+    gap: 29px;
+    align-self: stretch;
+}
+
+.services .line-02 .conception-service {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+}
+
+.services .line-02 .conception-service h3 {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    color: #A06056;
+    font-family: Varta;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+}
+
+.services .line-02 .conception-service p {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    color: rgba(112, 100, 88, 0.90);
+    font-family: Varta;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.services .line-02 .installation-service {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    flex: 1 0 0;
+}
+
+.services .line-02 .installation-service h3 {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    color: #A06056;
+    font-family: Varta;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.2px;
+}
+
+.services .line-02 .installation-service p {
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    color: rgba(112, 100, 88, 0.90);
+    font-family: Varta;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
 }
