@@ -798,3 +798,8 @@ footer .footer-content {
     line-height: 25px;
     text-decoration: none;
 }
+
+
+@media screen (max-width 768px) {
+    
+}
