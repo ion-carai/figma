@@ -4,19 +4,18 @@
     box-sizing: border-box;
 }
 
-html main {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-
+.hero-header {
+    display: flex;
+    justify-content: center;
+    background: #F3EEE8;
+    height: 900px;
 }
 
-.hero-header {
-    width: 1440px;
-    height: 900px;
+.hero-header .hero-header-container {
+    max-width: 1440px;
+    width: 100%;
     display: flex;
-
-
+    position: relative;
 }
 
 .hero-text {
@@ -28,30 +27,20 @@ html main {
     gap: 48px;
     flex: 1 0 0;
     align-self: stretch;
-    background: #F3EEE8;
-    width: 720px;
-    height: 900px;
-
-}
-
-
-.hero-header .hero-text .logo-menu {
-    width: 318px;
-    height: 27.5px;
-    flex-shrink: 0;
+    width: 50%;
 }
 
 .hero-header header {
     display: flex;
-    width: 1140px;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
-
-
+    position: absolute;
+    top: 55px;
+    right: 150px;
+    left: 150px;
 }
 
-.hero-header .hero-text .logo-menu h2 {
+.hero-header .logo-menu h2 {
     color: #A06056;
     font-size: 34px;
     font-family: Merriweather;
@@ -61,7 +50,7 @@ html main {
     letter-spacing: 2px;
 }
 
-.hero-header .hero-text .logo-menu p {
+.hero-header .logo-menu p {
     color: #706458;
     font-size: 18px;
     font-family: Varta;
@@ -70,9 +59,9 @@ html main {
     line-height: 25px;
 }
 
-.hero-header .hero-text .contact {
+.hero-header .contact {
     display: flex;
-    width: 49.996px;
+    width: 50px;
     height: 50px;
     justify-content: center;
     align-items: center;
@@ -80,19 +69,14 @@ html main {
     flex-shrink: 0;
     border-radius: 100px;
     border: 2px solid #FFF;
-
-
 }
 
-.hero-header .hero-text header .logo-menu {
-    width: 318px;
-    height: 27.5px;
-    flex-shrink: 0;
+.hero-header header .logo-menu {
     display: flex;
     gap: 82px;
 }
 
-.hero-header .hero-text .menu {
+.hero-header .menu {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -101,7 +85,11 @@ html main {
 
 .hero-header .hero-background {
     height: 900px;
-    flex: 1 0 0;
+    width: 50%;
+}
+
+.hero-header .hero-background img {
+    max-width: 100%;
 }
 
 .hero-content {
@@ -128,7 +116,6 @@ html main {
     font-weight: 700;
     line-height: 20px;
     letter-spacing: 1px;
-
 }
 
 .hero-header .hero-text .hero-content h1 {
@@ -139,8 +126,6 @@ html main {
     font-weight: 300;
     line-height: 70px;
     letter-spacing: -0.4px;
-    width: 420px;
-
 }
 
 .hero-header .hero-text .hero-content p {
@@ -150,30 +135,20 @@ html main {
     font-style: normal;
     font-weight: 300;
     line-height: 30.8px;
-    width: 420px;
-}
-
-.hero-text .down {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    padding: 20px 17px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 100px;
-    border: 2px solid #A06056;
 }
 
 .side-to-design {
     display: flex;
-    width: 1440px;
-    padding: 64px 150px 70px 150px;
-    align-items: flex-start;
-    gap: 48px;
+    justify-content: center;
     background: #F3EEE8;
+}
 
+.side-to-design .side-to-design-container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 64px 150px 70px;
+    gap: 48px;
+    display: flex;
 }
 
 .title-link {
@@ -182,7 +157,6 @@ html main {
     align-items: flex-start;
     gap: 30px;
     flex: 1 0 0;
-
 }
 
 .title-link .we-helps-creators-do h2 {
@@ -219,26 +193,16 @@ html main {
     align-items: flex-start;
     gap: 30px;
     flex: 1 0 0;
-
 }
 
-.services .line-01 {
-    display: flex;
-    align-items: flex-start;
-    gap: 29px;
-    align-self: stretch;
-
-}
-
-.services .line-02 {
+.services .line {
     display: flex;
     align-items: flex-start;
     gap: 29px;
     align-self: stretch;
 }
 
-
-.services .line-01 .our-advices {
+.services .line .card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -246,7 +210,7 @@ html main {
     flex: 1 0 0;
 }
 
-.services .line-01 .our-advices h3 {
+.services .line .card h3 {
     color: #A06056;
     font-family: Varta;
     font-size: 25px;
@@ -256,7 +220,7 @@ html main {
     letter-spacing: -0.2px;
 }
 
-.services .line-01 .our-advices p {
+.services .line .card p {
     color: rgba(112, 100, 88, 0.90);
     font-family: Varta;
     font-size: 18px;
@@ -265,104 +229,19 @@ html main {
     line-height: 25px;
 }
 
-.services .line-01 .click-and-collect {
+.latest-trends {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    flex: 1 0 0;
-}
-
-.services .line-01 .click-and-collect h3 {
-    color: #A06056;
-    font-family: Varta;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: -0.2px;
-}
-
-.services .line-01 .click-and-collect p {
-    color: rgba(112, 100, 88, 0.90);
-    font-family: Varta;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px;
-}
-
-.services .line-02 {
-    display: flex;
-    align-items: flex-start;
-    gap: 29px;
-    align-self: stretch;
-}
-
-.services .line-02 .conception-service {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    flex: 1 0 0;
-}
-
-.services .line-02 .conception-service h3 {
-    color: #A06056;
-    font-family: Varta;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: -0.2px;
-}
-
-.services .line-02 .conception-service p {
-    color: rgba(112, 100, 88, 0.90);
-    font-family: Varta;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px;
-}
-
-.services .line-02 .installation-service {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    flex: 1 0 0;
-}
-
-.services .line-02 .installation-service h3 {
-    color: #A06056;
-    font-family: Varta;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: -0.2px;
-}
-
-.services .line-02 .installation-service p {
-    color: rgba(112, 100, 88, 0.90);
-    font-family: Varta;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px;
-}
-
-.be-aware-of-the-latest-trends {
-    display: flex;
-    padding: 70px 0px;
-    flex-direction: column;
-    align-items: center;
-    gap: 64px;
+    justify-content: center;
     background: #FFF;
 }
 
-.trends-newsletter {
+.latest-trends .latest-trends-container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 70px 150px 70px;
+}
+
+.latest-trends-container .trends-newsletter {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -443,7 +322,7 @@ html main {
     text-decoration: none;
 }
 
-.be-aware-of-the-latest-trends .slider {
+.slider {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -452,36 +331,31 @@ html main {
 
 .slider .slides {
     display: flex;
-    width: 1440px;
     justify-content: center;
     align-items: flex-start;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .slider .slides img {
     width: 360px;
     height: 550px;
-    flex-shrink: 0;
 }
 
-.be-aware-of-the-latest-trends .inspirations {
+.inspirations {
     display: flex;
-    width: 1140px;
     align-items: flex-start;
     gap: 226px;
 }
 
 .inspirations .title-paragraph {
     display: flex;
-    width: 1140px;
-    align-items: flex-start;
     gap: 30px;
     flex-shrink: 0;
+    width: 100%;
 }
 
 .inspirations .title-paragraph h3 {
-    width: 360px;
-    flex-shrink: 0;
     color: #534B42;
     font-family: Merriweather;
     font-size: 45px;
@@ -492,26 +366,27 @@ html main {
 }
 
 .inspirations .title-paragraph p {
-    width: 750px;
-    flex-direction: column;
-    flex-shrink: 0;
     color: #706458;
     font-family: Varta;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
+    flex-direction: column;
 }
 
-footer {
+footer{
     display: flex;
-    width: 1440px;
-    padding: 70px 150px 64px 150px;
     flex-direction: column;
     align-items: center;
-    gap: 48px;
     background: #F3EEE8;
+}
 
+.footer-container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 70px 150px 64px;
+    gap: 48px;
 }
 
 footer .footer-content {
@@ -519,6 +394,7 @@ footer .footer-content {
     align-items: flex-start;
     gap: 64px;
     align-self: stretch;
+    flex-wrap: wrap;
 }
 
 .footer-content h1 {
@@ -730,7 +606,7 @@ footer .footer-content {
 }
 
 .blog .post-action-link a {
-    color: var(--terracotta, #A06056);
+    color: #A06056;
     font-family: Karla;
     font-size: 17px;
     font-style: normal;
@@ -797,9 +673,4 @@ footer .footer-content {
     font-weight: 400;
     line-height: 25px;
     text-decoration: none;
-}
-
-
-@media screen (max-width 768px) {
-    
 }
