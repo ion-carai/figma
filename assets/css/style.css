@@ -248,9 +248,8 @@
 
 .latest-trends-container .trends-newsletter {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 189px;
 }
 
 .trends-newsletter .title-link {
@@ -296,8 +295,6 @@
     letter-spacing: 0.3px;
     text-decoration: none;
 }
-
-
 
 .trends-newsletter form {
     display: flex;
