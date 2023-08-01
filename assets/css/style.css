@@ -286,6 +286,19 @@
     line-height: 25px;
 }
 
+.latest-trends-container .action-links a {
+    color: #A06056;
+    font-family: Karla;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+}
+
+
+
 .trends-newsletter form {
     display: flex;
     align-items: flex-start;
@@ -294,8 +307,8 @@
 
 .trends-newsletter form input {
     display: flex;
-    width: 296.095px;
-    padding: 15px 15.095px 10px 15px;
+    width: 296px;
+    padding: 15px 15px 10px 15px;
     justify-content: center;
     align-items: center;
     border-radius: 1px;
@@ -377,7 +390,6 @@
     font-style: normal;
     font-weight: 400;
     line-height: 25px;
-    flex-direction: column;
 }
 
 footer {
@@ -703,6 +715,11 @@ footer .footer-content {
     .hero-text .hero-content {
         padding: 25px;
         align-items: center;
+        gap: 24px;
+    }
+
+    .title-with-paragraph {
+        gap: 24px;
     }
 
     .hero-text img {
@@ -814,6 +831,110 @@ footer .footer-content {
         line-height: 25px;
         margin-left: 0;
         margin-bottom: 40px;
+    }
+
+    .services .line .card {
+        gap: 5px;
+    }
+
+
+    .latest-trends .latest-trends-container {
+        padding: 48px 32px;
+
+    }
+
+    .latest-trends-container .trends-newsletter {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        width: 100%;
+        margin-bottom: 64px;
+    }
+
+    .trends-newsletter .title-link .frame-7 h4 {
+        line-height: 40px;
+        letter-spacing: -0.3px;
+    }
+
+    .trends-newsletter .title-link .frame-7 p {
+        line-height: 25px;
+    }
+
+    .action-links,
+    .action-links a {
+        line-height: 25px;
+        letter-spacing: 0.3px;
+    }
+
+    .trends-newsletter .title-link .frame-7,
+    .trends-newsletter .title-link {
+        gap: 16px;
+    }
+
+    .trends-newsletter form {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .trends-newsletter form input {
+        padding: 12px 15px;
+    }
+
+    .trends-newsletter form button {
+        height: 50px;
+        padding: 12px 30px 13px 30px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .slider {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .inspirations .title-paragraph {
+        width: 311px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .inspirations .title-paragraph h3 {
+        font-size: 35px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: -0.3px;
+    }
+
+    .inspirations .title-paragraph p {
+        color: rgba(112, 100, 88, 0.90);
+        line-height: 25px;
+    }
+
+    .slider .slides {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-container {
+        display: flex;
+        height: 1752px;
+        padding: 48px 32px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer-content .link-group {
+        flex-direction: column;
+        gap: 10px;
+        align-self: stretch;
+    }
+
+    .link-group h2 {
+        color: #121212;
     }
 
 }
